@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Your Shares</th>
+                <th>Shares Price</th>
+                <th>Total Stock Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.stock_value | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Balance</th>
+                <th>Total Account Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ cash | usd }}</td>
+                <td>{{ (value + cash) | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

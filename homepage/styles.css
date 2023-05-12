@@ -1,0 +1,25 @@
+.header {
+  background-color: #DCDCDC;
+  color: #000000;
+  margin-bottom: 2rem;
+  padding: 15px;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 500px;
+  height: auto;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: x-large;
+}

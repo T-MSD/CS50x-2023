@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: I compared all sort times
+
+sort2 uses: Merge sort
+
+How do you know?: I compared all sort times
+
+sort3 uses: Selection sort
+
+How do you know?: I compared all sort times

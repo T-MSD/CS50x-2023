@@ -1,0 +1,1 @@
+We need to know how many times the person played each song, so we can determine a more accurate "Audio Aura".
